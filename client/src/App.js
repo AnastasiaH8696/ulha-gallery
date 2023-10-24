@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
 import Single from "./pages/Single";
 import Write from "./pages/Write";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
+import About from "./pages/About";
+import Contact from "./pages/Contact"
 
 // Create a Layout component that defines the structure of the web page
 const Layout = () => {
@@ -40,12 +40,12 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/about",
+    element: <About />,
   },
   {
-    path: "/register",
-    element: <Register />,
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
@@ -54,8 +54,8 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <RouterProvider router={router} />
-      </div>
+        <RouterProvider router={router} />{" "}
+      </div>{" "}
     </div>
   );
 }
