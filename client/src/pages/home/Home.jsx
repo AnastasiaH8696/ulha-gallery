@@ -22,6 +22,7 @@ const Home = () => {
         {images.map((image) => (
           <div key={image.id} className="item">
             <img src={image.src} alt={`Image ${image.id}`} />
+            <div className="image-name">{`Image ${image.id}`}</div>
           </div>
         ))}
       </div>
