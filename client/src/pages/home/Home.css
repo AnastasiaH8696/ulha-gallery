@@ -1,3 +1,21 @@
+body {
+    background: url('https://github.com/AnastasiaH8696/ulha-gallery/blob/main/client/temp_resources/background.jpg?raw=true');
+}
+
+.header {
+    background: url('https://github.com/AnastasiaH8696/ulha-gallery/blob/main/client/temp_resources/header.jpg?raw=true');
+    background-size: contain;
+    /* Change to 'contain' to make the image fit */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent background image repetition */
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
 .masonry {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,6 +29,7 @@
     /* Center rows vertically */
     margin-left: 10%;
     margin-right: 10%;
+    background-color: white;
 }
 
 .item {
