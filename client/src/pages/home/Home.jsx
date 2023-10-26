@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Gallery</h1>
+      <div className="header"></div>
       <div className="masonry">
         {images.map((image) => (
           <div key={image.id} className="item">

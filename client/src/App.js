@@ -1,9 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Single from "./pages/Single";
-import Write from "./pages/Write";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact"
 
@@ -13,7 +10,6 @@ const Layout = () => {
     <>
       <Navbar />
       <Outlet />
-      <Footer />
     </>
   );
 };
@@ -30,22 +26,14 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/post/:id",
-        element: <Single />,
+        path: "/about",
+        element: <About />,
       },
       {
-        path: "/write",
-        element: <Write />,
+        path: "/contact",
+        element: <Contact />,
       },
     ],
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
   },
 ]);
 
