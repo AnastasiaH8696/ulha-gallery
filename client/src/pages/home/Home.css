@@ -1,9 +1,9 @@
 body {
-    background: url('https://github.com/AnastasiaH8696/ulha-gallery/blob/main/client/temp_resources/background.jpg?raw=true');
+    background: url('https://github.com/AnastasiaH8696/ulha-gallery/blob/main/db/file_storage/background.jpg?raw=true');
 }
 
 .header {
-    background: url('https://github.com/AnastasiaH8696/ulha-gallery/blob/main/client/temp_resources/header.jpg?raw=true');
+    background: url('https://github.com/AnastasiaH8696/ulha-gallery/blob/main/db/file_storage/header.jpg?raw=true');
     background-size: contain;
     /* Change to 'contain' to make the image fit */
     background-position: center;
